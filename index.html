@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <meta name="description" content="Media Downloader untuk file video, gambar, dan audio yang boleh kamu simpan.">
+  <title>Media Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-icon">↓</span><span>Media<span class="brand-light">Downloader</span></span></a>
+      <span class="pill"><span class="dot"></span> Simple · Private</span>
+    </header>
+    <section class="hero">
+      <div class="eyebrow"><span class="sparkle">✦</span> DOWNLOAD MEDIA DENGAN MUDAH</div>
+      <h1>Simpan media<br><span>yang kamu sukai.</span></h1>
+      <p class="lead">Tempel tautan video, gambar, atau audio yang kamu miliki atau berhak untuk menyimpannya.</p>
+      <form id="downloadForm" class="link-form">
+        <label class="sr-only" for="urlInput">Tautan media</label>
+        <span class="link-symbol" aria-hidden="true">↗</span>
+        <input id="urlInput" type="url" inputmode="url" placeholder="Tempel tautan di sini..." autocomplete="url" required>
+        <button type="submit" id="checkButton">Periksa tautan <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="hint">File langsung: MP4, WebM, JPG, PNG, MP3, M4A, WAV, OGG, dan format umum lainnya.</p>
+      <div id="result" class="result" role="status" aria-live="polite" hidden></div>
+    </section>
+    <section class="platforms" aria-label="Platform yang dikenali">
+      <p class="section-label">KENALI TAUTAN DARI</p>
+      <div class="platform-grid">
+        <div class="platform"><span class="platform-icon instagram">◎</span><span>Instagram</span></div>
+        <div class="platform"><span class="platform-icon tiktok">♪</span><span>TikTok</span></div>
+        <div class="platform"><span class="platform-icon facebook">f</span><span>Facebook</span></div>
+        <div class="platform"><span class="platform-icon xbrand">𝕏</span><span>X / Twitter</span></div>
+        <div class="platform"><span class="platform-icon youtube">▶</span><span>YouTube</span></div>
+      </div>
+      <p class="platform-note">Untuk tautan postingan sosial, buka sumber aslinya. Pengunduhan otomatis membutuhkan integrasi resmi yang sesuai dan izin yang berlaku.</p>
+    </section>
+    <section class="media-types">
+      <div class="type-card"><span class="type-icon video">▶</span><div><h2>Video</h2><p>MP4, WebM, MOV, M4V</p></div></div>
+      <div class="type-card"><span class="type-icon image">▧</span><div><h2>Gambar</h2><p>JPG, PNG, GIF, WebP, AVIF</p></div></div>
+      <div class="type-card"><span class="type-icon audio">♫</span><div><h2>Audio / Suara</h2><p>MP3, M4A, WAV, OGG, AAC, FLAC</p></div></div>
+    </section>
+    <section class="steps">
+      <div class="step-card"><span class="step-number">01</span><h2>Salin tautan</h2><p>Gunakan tautan media yang kamu miliki izin untuk menyimpan.</p></div>
+      <div class="step-card"><span class="step-number">02</span><h2>Periksa tautan</h2><p>Website mengenali platform atau jenis file langsung.</p></div>
+      <div class="step-card"><span class="step-number">03</span><h2>Buka atau unduh</h2><p>Unduh file langsung bila server sumber mengizinkan.</p></div>
+    </section>
+    <section class="notice"><span class="notice-icon">ⓘ</span><div><strong>Gunakan dengan bertanggung jawab</strong><p>Unduh hanya konten milikmu sendiri, konten berlisensi, atau konten yang pemiliknya mengizinkan. Jangan melewati login, paywall, privasi akun, atau perlindungan teknis.</p></div></section>
+    <footer><span>Media Downloader · Proyek independen</span><span>Tidak berafiliasi dengan Instagram, TikTok, Facebook, X, atau YouTube.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
